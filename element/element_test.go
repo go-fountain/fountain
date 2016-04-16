@@ -2,14 +2,26 @@
 package element
 
 import (
+	"errors"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
+	. "github.com/onsi/gomega"
 )
 
 func TestOfClass(t *testing.T) {
+	RegisterTestingT(t)
 	n := OfClass(Action)
-	assert.Equal(t, n, &Element{
+	Expect(n).To(Equal(&Element{
 		Class: Action,
-	})
+	}))
+}
+
+func TestPanicIf(t *testing.T) {
+	RegisterTestingT(t)
+	defer func(){
+		r := recover()
+		Expect(r).NotTo(BeNil())
+	}()
+	err := errors.New("test fail")
+	panicIf(err)
 }
