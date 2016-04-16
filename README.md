@@ -27,6 +27,10 @@ Then, to format a screenplay to terminal:
 
 [Outright Mental](http://w.outright.io)
 
+[Fountain.io](http://fountain.io/)
+
+[Martin Vilcans](https://github.com/vilcans) for [Screenplain](https://github.com/vilcans/screenplain)
+
 ## [Element](element/)
 
 An Element is a single block of content, spanning the full width of the page, for a limited vertical area.
