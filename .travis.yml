@@ -1,0 +1,12 @@
+language: go
+
+go:
+  - 1.5
+
+install:
+  - # Testing
+  - go get github.com/stretchr/testify/assert
+  - go get github.com/stretchr/testify/mock
+  - # Logging
+  - go get github.com/Sirupsen/logrus
+
