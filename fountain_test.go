@@ -11,7 +11,7 @@ func TestFountain(t *testing.T) {
 	defer func() { os.Args = oldArgs }()
 
 	os.Args = []string{"cmd",
-		"format", "testdata/hello-world.fountain",
+		"format", "element/testdata/hello-world.fountain",
 	}
 	main()
 }

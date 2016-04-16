@@ -11,17 +11,35 @@
 //
 package element
 
-// Element models a musical element
+// Element models an element of a screenplay
 type Element struct {
-	Class Class // Class of pitch
+	Text string
+	Class Class // Class of element
 }
 
 // Elements is a set of elements, e.g. derived by parsing a screenplay file
 type Elements []*Element
 
-// OfClass pitch returns a Element model
-func OfClass(class Class) (n *Element) {
-	n = &Element{}
-	n.Class = class
+// OfClass returns an Element model
+func OfClass(class Class) (e *Element) {
+	e = &Element{}
+	e.Class = class
 	return
+}
+
+// FromText parses text to return an Element model
+func FromText(text string) (e *Element) {
+	e = &Element{}
+	e.Text = text
+	return
+}
+
+/*
+ *
+ private */
+
+func panicIf(e error) {
+	if e != nil {
+		panic(e)
+	}
 }
