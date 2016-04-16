@@ -5,26 +5,26 @@ package element
 type Class int
 
 const (
-	Generic Class = iota
+	Generic Class = 0
 
-	TitlePage
-	PageBreak
+	TitlePage Class = 101
+	PageBreak Class = 102
 
-	Action
-	CenteredText
-	Character
-	Dialogue
-	DualDialogue
-	Emphasis
-	Lyrics
-	Parenthetical
-	SceneHeading
-	Transition
+	Action        Class = 201
+	CenteredText  Class = 202
+	Character     Class = 203
+	Dialogue      Class = 204
+	DualDialogue  Class = 205
+	Emphasis      Class = 206
+	Lyrics        Class = 207
+	Parenthetical Class = 208
+	SceneHeading  Class = 209
+	Transition    Class = 210
 
-	Comment
-	Note
-	Section
-	Synopsis
+	Comment  Class = 211
+	Note     Class = 212
+	Section  Class = 213
+	Synopsis Class = 214
 )
 
 // String of the element, expressed with Sharps or Flats

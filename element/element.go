@@ -13,7 +13,7 @@ package element
 
 // Element models an element of a screenplay
 type Element struct {
-	Text string
+	Text  string
 	Class Class // Class of element
 }
 

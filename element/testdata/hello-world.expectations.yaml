@@ -1,0 +1,60 @@
+---
+elements:
+  - text: 'Title:'
+    class: 0
+  - text: '    HELLO WORLD'
+    class: 0
+  - text: 'Credit: written by'
+    class: 0
+  - text: 'Author: Charney Kaye'
+    class: 0
+  - text: 'Copyright:'
+    class: 0
+  - text: '    1st Draft'
+    class: 0
+  - text: '    (c) 2016'
+    class: 0
+  - text: '    Outright Mental Inc.'
+    class: 0
+  - text: '    1080 Bergen St. #105, Brooklyn NY 11216'
+    class: 0
+  - text: '    +1 (212) 960-8811'
+    class: 0
+  - text: _**TIME AND PLACE**_
+    class: 0
+  - text: New York City, United States of America.
+    class: 0
+  - text: Early 21st Century.
+    class: 0
+  - text: _**CHARACTERS**_
+    class: 0
+  - text: FOO, FEM, 42, hacker, writer, artist
+    class: 0
+  - text: BAR, MALE, 42, artist, Foo's partner in crime
+    class: 0
+  - text: ============================================================
+    class: 0
+  - text: EXT. ROOFTOP, BROOKLYN, NEW YORK CITY - NIGHT
+    class: 0
+  - text: FOO and BAR crouch behind the wall at the roof's edge.
+    class: 0
+  - text: They turn to each other.
+    class: 0
+  - text: FOO
+    class: 0
+  - text: Totally fucked up?
+    class: 0
+  - text: BAR
+    class: 0
+  - text: Beyond all recognition.
+    class: 0
+  - text: They lay out their materials and furiously get to work.
+    class: 0
+  - text: 'CUT TO:'
+    class: 0
+  - text: INT. CORPORATION - DAY
+    class: 0
+  - text: It's a giant mega-corporation.
+    class: 0
+  - text: '> TO BE CONTINUED <'
+    class: 0
