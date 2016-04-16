@@ -75,4 +75,3 @@ func stringOf(from Class) string {
 	}
 	return "-"
 }
-

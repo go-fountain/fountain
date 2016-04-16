@@ -12,5 +12,4 @@
 package export
 
 // Export models a musical export
-type Export struct {}
-
+type Export struct{}

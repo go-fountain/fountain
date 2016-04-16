@@ -13,7 +13,7 @@ package element
 
 // Element models a musical element
 type Element struct {
-	Class  Class  // Class of pitch
+	Class Class // Class of pitch
 }
 
 // Elements is a set of elements, e.g. derived by parsing a screenplay file

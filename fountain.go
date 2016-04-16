@@ -22,9 +22,9 @@ import (
 
 	"github.com/codegangsta/cli"
 
-	"github.com/go-fountain/fountain/page"
 	"github.com/go-fountain/fountain/element"
 	"github.com/go-fountain/fountain/export"
+	"github.com/go-fountain/fountain/page"
 )
 
 func main() {
@@ -42,7 +42,7 @@ var commands = []cli.Command{
 
 	{ // Format paginated script to terminal
 		Name:        "format",
-		Aliases:     []string{"fmt","f"},
+		Aliases:     []string{"fmt", "f"},
 		Usage:       "format a screenplay to terminal",
 		Description: "A formatted screenplay is a set of Pages exported as a raster of characters.",
 		Action: func(c *cli.Context) {
@@ -57,5 +57,4 @@ var commands = []cli.Command{
 			}
 		},
 	},
-
 }
