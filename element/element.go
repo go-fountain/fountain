@@ -16,6 +16,9 @@ type Element struct {
 	Class  Class  // Class of pitch
 }
 
+// Elements is a set of elements, e.g. derived by parsing a screenplay file
+type Elements []*Element
+
 // OfClass pitch returns a Element model
 func OfClass(class Class) (n *Element) {
 	n = &Element{}

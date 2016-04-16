@@ -14,3 +14,5 @@ package page
 // Page models a musical page
 type Page struct {}
 
+// Pages is a set of optimal pages
+type Pages []*Page

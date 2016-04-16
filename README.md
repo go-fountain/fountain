@@ -10,9 +10,9 @@ To build and install `fountain` to your machine:
 
     make install
 
-Then, to ....................:
+Then, to format a screenplay to terminal:
 
-    $ fountain ...................
+    $ fountain format hello-world.fountain
     
     ...................
     ...................

@@ -16,6 +16,8 @@ func TestFountain(t *testing.T) {
 	main()
 }
 
+// TODO(ckaye) test exporting `testdata/hello-world.fountain` as text to terminal
+
 func TestHelpCmd(t *testing.T) {
 	oldArgs := os.Args
 	defer func() { os.Args = oldArgs }()

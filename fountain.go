@@ -21,6 +21,10 @@ import (
 	"os"
 
 	"github.com/codegangsta/cli"
+
+	"github.com/go-fountain/fountain/page"
+	"github.com/go-fountain/fountain/element"
+	"github.com/go-fountain/fountain/export"
 )
 
 func main() {
@@ -44,7 +48,9 @@ var commands = []cli.Command{
 		Action: func(c *cli.Context) {
 			file := c.Args().First()
 			if len(file) > 0 {
-				// TODO(charneykaye) output the formatted screenplay to terminal
+				elements := element.ParseFile(file)
+				pages := page.Paginate(elements)
+				export.PagesText(pages, os.Stdout)
 			} else {
 				// no arguments
 				cli.ShowCommandHelp(c, "format")
