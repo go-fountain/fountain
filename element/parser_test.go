@@ -11,11 +11,17 @@ import (
 
 // TODO(charneykaye) test parse file into elements
 
+var testParserExpectationFileNames = []string{
+	"hello-world",
+}
+
 func TestParseFile(t *testing.T) {
 	RegisterTestingT(t)
-	expectations := getExpectationsOf("testdata/hello-world.expectations.yaml")
-	elements := ParseFile("testdata/hello-world.fountain")
-	Expect(elements).To(ConsistOf(expectations.Elements))
+	for _, name := range testParserExpectationFileNames {
+		expectations := getExpectationsOf("testdata/" + name + ".expectations.yaml")
+		elements := ParseFile("testdata/" + name + ".fountain")
+		Expect(elements).To(ConsistOf(expectations.Elements))
+	}
 }
 
 func TestParser_NextByte(t *testing.T) {
