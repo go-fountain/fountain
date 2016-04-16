@@ -29,7 +29,7 @@ Then, to format a screenplay to terminal:
 
 [Fountain.io](http://fountain.io/)
 
-[Martin Vilcans](https://github.com/vilcans) for [Screenplain](https://github.com/vilcans/screenplain)
+[Martin Vilcans](http://www.librador.com/) for [Screenplain](https://github.com/vilcans/screenplain)
 
 ## [Element](element/)
 
